@@ -1,5 +1,6 @@
 - add network availability checking
 - display retrieved content in a UITableView: DONE
+- resolve problems with nested XML nodes
 - implement drill-down into post details
 - implement custom avatar image
 - grab subsidiary XML data: created_at, position and usages
