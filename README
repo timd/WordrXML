@@ -1,0 +1,14 @@
+Project:	Wordr iPhone client
+Phase:		Initial attempt at grabbing XML from an external URL and displaying
+			on the screen
+			
+Outline:
+
+"Tweet" object: holds details of each individual post
+
+RetrieveXMLController: retrieves content from a URL, and returns an NSMutableArray of Tweet objects
+
+WordrXMLViewController: manages the process overall (for now)
+
+RootViewController handles the table.
+

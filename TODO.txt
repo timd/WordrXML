@@ -1,0 +1,6 @@
+- add network availability checking
+- display retrieved content in a UITableView: DONE
+- implement drill-down into post details
+- implement custom avatar image
+- grab subsidiary XML data: created_at, position and usages
+- fix the 'local declaration hides instance variable' warning in RetrieveXMLController.m
