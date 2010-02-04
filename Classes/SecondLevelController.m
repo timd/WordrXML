@@ -21,6 +21,17 @@
 @synthesize	timestamp;					// timestamp of posting
 @synthesize	inReplyToTweetID;			// GUID of post which this is a reply to
 
+@synthesize textLabel;
+@synthesize userLabel;
+@synthesize tweetIDLabel;
+@synthesize positionLabel;
+@synthesize usagesLabel;
+@synthesize userAvatarULLabel;
+@synthesize timestampLabel;
+@synthesize inReplyToTweetIDLabel;
+
+
+
 
 
 /*
@@ -42,7 +53,9 @@
 	
 	//NSInteger dataCount = [RootViewController.grabbedData count];
 	
-	NSLog(@"The user is %@ and the tweet is %@", self.user, self.text);
+	
+	
+	
 	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -52,9 +65,24 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-	[self.tableView reloadData];
+	self.title = nil;
+	
+	self.title = @"";
 	
 	NSLog(@"Firing the SecondLevelViewController viewWillAppear method");
+	
+	NSLog(@"The user is %@ and the tweet is %@", self.user, self.text);
+	
+	textLabel.text = self.text;
+	userLabel.text = self.user;
+	//	UILabel *tweetIDLabel;
+	//	UILabel *positionLabel;
+	//	UILabel *usagesLabel;
+	//	UILabel *userAvatarULLabel;
+	//	UILabel *timestampLabel;
+	//	UILabel *inReplyToTweetIDLabel;
+	
+	
 	
 	
 }
@@ -93,10 +121,11 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    self.text = nil;
-	self.user = nil;
+	
+	
 }
 
+/*
 
 #pragma mark Table view methods
 

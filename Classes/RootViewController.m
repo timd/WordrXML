@@ -166,11 +166,11 @@
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-	// NSLog(@"didSelectRowAtIndexPath fired for row %d", indexPath.row);
+	NSLog(@"didSelectRowAtIndexPath fired for row %d", indexPath.row);
 	
 	Tweet *tweet = [grabbedData objectAtIndex:indexPath.row];
 	
-	// NSLog(@"User is %@, text is %@", tweet.user, tweet.text);
+	NSLog(@"User is %@, text is %@", tweet.user, tweet.text);
 	
 	self.secondLevelController.title = @"Title here";
 	self.secondLevelController.text = tweet.text;
