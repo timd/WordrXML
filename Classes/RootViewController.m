@@ -24,7 +24,7 @@
 	NSLog(@"About to run the ViewDidLoad superclass method...");
     [super viewDidLoad];
 	
-	self.title = @"Wordr";
+	self.title = @"Everyone";
 
 	self.editButtonItem.possibleTitles = [NSSet setWithObjects:@"Add/Edit", @"Done", nil];
 	

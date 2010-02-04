@@ -50,6 +50,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *timestampLabel;
 @property (nonatomic, retain) IBOutlet UILabel *inReplyToTweetIDLabel;
 
+-(IBAction)touchToPopController;
 
 
 @end

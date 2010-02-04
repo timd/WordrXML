@@ -31,7 +31,11 @@
 @synthesize inReplyToTweetIDLabel;
 
 
-
+-(IBAction)touchToPopController {
+	// Touch to pop controller
+	[self.navigationController popViewControllerAnimated:YES];
+	
+}
 
 
 /*
