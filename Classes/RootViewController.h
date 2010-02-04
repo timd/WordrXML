@@ -8,13 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class SecondLevelController;
+
 @interface RootViewController : UITableViewController {
 	
 	NSMutableArray *grabbedData;
 	UITableViewCell *nibLoadedCell;
+	
+	SecondLevelController *secondLevelController;
 }
 
 @property (nonatomic, retain) NSMutableArray *grabbedData;
 @property (nonatomic, retain) IBOutlet UITableViewCell *nibLoadedCell;
+@property (nonatomic, retain) IBOutlet SecondLevelController *secondLevelController;
 
 @end

@@ -37,7 +37,14 @@
 	[parser setDelegate:self];
 	
 	// Run the paser itself
-	[parser parse];
+	if ([parser parse])
+	{
+		NSLog(@"Parsed OK");
+		
+	} else {
+		NSLog(@"There's been a problem :-(");
+	}
+
 	
 	// Return the array of Tweet objects
 	return xmlElementObjects;

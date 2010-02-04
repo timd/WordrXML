@@ -9,24 +9,28 @@
 #import "RootViewController.h"
 #import "RetrieveXMLController.h"
 #import "Tweet.h"
+#import "SecondLevelController.h"
 
 
 @implementation RootViewController
 
 @synthesize grabbedData;
 @synthesize nibLoadedCell;
+@synthesize secondLevelController;
 
 
 - (void)viewDidLoad {
 
 	NSLog(@"About to run the ViewDidLoad superclass method...");
     [super viewDidLoad];
+	
+	self.title = @"Wordr";
 
 	self.editButtonItem.possibleTitles = [NSSet setWithObjects:@"Add/Edit", @"Done", nil];
 	
 	self.editButtonItem.title = @"Update";
 	
-	self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	// self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
 	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -158,16 +162,23 @@
 
 
 
-/*
+
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    // Navigation logic may go here -- for example, create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController animated:YES];
-	// [anotherViewController release];
+	// NSLog(@"didSelectRowAtIndexPath fired for row %d", indexPath.row);
+	
+	Tweet *tweet = [grabbedData objectAtIndex:indexPath.row];
+	
+	// NSLog(@"User is %@, text is %@", tweet.user, tweet.text);
+	
+	self.secondLevelController.title = @"Title here";
+	self.secondLevelController.text = tweet.text;
+	self.secondLevelController.user = tweet.user;
+	[self.navigationController pushViewController:self.secondLevelController animated:YES];
+	
 }
-*/
+
 
 
 /*
