@@ -67,18 +67,34 @@
 {
 	// Parser delegate method that fires when an element STARTS
 
-	// If it's a <PictureInfo>
+	// If it's a <status>
 	if (![elementName compare:@"status"]) 
 	{
 		// It's a top-level section, therefore a new empty object will be required
 		// alloc and init a new instance of a Tweet
 		tempElement = [[Tweet alloc] init];
+		
+		// Now let's grab the contents of the 'created_at' and 'id' attributes
+		NSString *created_at = [attributeDict valueForKey:@"created_at"];
+		NSString *tweet_id = [attributeDict valueForKey:@"id"];
+				
+		NSLog(@"Created_at = %@ | id = %i", created_at, tweet_id);
+
+		[tempElement setTimestamp:created_at];
+		[tempElement setTweetID:tweet_id];
+		
 	}
 	
 	else if (![elementName compare:@"word"])
 	{
 		// It's the start of an <word> element
 		NSLog(@"It's the start of a <word> element");
+				
+		// Grab the usages data
+		NSString *usages = [attributeDict valueForKey:@"usages"];
+		NSString *position = [attributeDict valueForKey:@"position"];
+		NSLog(@"Usages = %@ | Position = %@", usages, position);
+		
 	} 
 	
 	
@@ -105,6 +121,7 @@
 		// It's the end of a whole <status> element, therefore need to 
 		// stuff the current object onto the end of the xmlElementObjects mutable array
 		[xmlElementObjects addObject:tempElement];
+		[tempElement release];
 		
 	}
 	
@@ -112,7 +129,23 @@
 	{
 		// It's the end of an <word> element
 		NSLog(@"It's the end of a <word> element");
+		
 	} 
+	
+	else if (![elementName compare:@"user"]) 
+	{
+		// It's the end of an <user> element
+		NSString *tweet_user = currentAttribute;
+		NSLog(@"The user is %@", tweet_user);
+		
+		// Set the updateUser of tempElement to the current
+		// attribute (using a synthesized method)
+		[tempElement setUser:tweet_user];
+		
+		currentAttribute = [NSMutableString string];
+
+		
+	}
 	
 	else if (![elementName compare:@"text"])
 	{
@@ -122,17 +155,10 @@
 		// Set the updateText of tempElement to the current
 		// attribute (using a synthesized method)
 		[tempElement setText:currentAttribute];
-	} 
-	
-	else if (![elementName compare:@"user"]) 
-	{
-		// It's the end of an <user> element
-		NSLog(@"The user is %@", currentAttribute);
 		
-		// Set the updateUser of tempElement to the current
-		// attribute (using a synthesized method)
-		[tempElement setUser:currentAttribute];
-	}
+		currentAttribute = [NSMutableString string];
+
+	} 
 	
 	else if (![elementName compare:@"statuses"]) 
 	{

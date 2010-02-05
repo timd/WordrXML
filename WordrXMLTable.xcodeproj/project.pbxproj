@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* WordrXMLTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* WordrXMLTableAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		22748FA2111C7D5600C08D75 /* PullToRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22748FA1111C7D5600C08D75 /* PullToRefreshTableViewController.m */; };
 		228D6B31111871590054B55F /* RetrieveXMLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6B2E111871590054B55F /* RetrieveXMLController.m */; };
 		228D6B32111871590054B55F /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D6B30111871590054B55F /* Tweet.m */; };
 		228D6BA4111879370054B55F /* wordrTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228D6BA3111879370054B55F /* wordrTableCell.xib */; };
@@ -21,18 +20,30 @@
 		228D6BF4111882790054B55F /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 228D6BF2111882790054B55F /* TODO.txt */; };
 		2291F083111AEE2E004B84C4 /* SecondLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2291F081111AEE2E004B84C4 /* SecondLevelController.m */; };
 		2291F084111AEE2E004B84C4 /* SecondLevelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2291F082111AEE2E004B84C4 /* SecondLevelController.xib */; };
-		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		22F47CA6111C801000F8FA0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F47CA5111C801000F8FA0C /* Foundation.framework */; };
+		22F47D2D111C823400F8FA0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F47D2C111C823400F8FA0C /* UIKit.framework */; };
+		22F47D31111C825400F8FA0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F47D30111C825400F8FA0C /* CoreGraphics.framework */; };
+		22F47D39111C83C600F8FA0C /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22F47D36111C83C600F8FA0C /* pop.wav */; };
+		22F47D3A111C83C600F8FA0C /* psst1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22F47D37111C83C600F8FA0C /* psst1.wav */; };
+		22F47D3B111C83C600F8FA0C /* psst2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22F47D38111C83C600F8FA0C /* psst2.wav */; };
+		22F47D3D111C842500F8FA0C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F47D3C111C842500F8FA0C /* CoreAudio.framework */; };
+		22F47D48111C843300F8FA0C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F47D47111C843300F8FA0C /* AudioToolbox.framework */; };
+		22F47D5E111C848F00F8FA0C /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F47D5D111C848F00F8FA0C /* SoundEffect.m */; };
+		22F4814E111C86A100791084 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22748F9C111C7CFA00C08D75 /* EGORefreshTableHeaderView.m */; };
+		22F4817E111C882700791084 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F4817D111C882700791084 /* QuartzCore.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* WordrXMLTableAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordrXMLTableAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* WordrXMLTableAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordrXMLTableAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* WordrXMLTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordrXMLTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22748F9B111C7CFA00C08D75 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		22748F9C111C7CFA00C08D75 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		22748FA0111C7D5600C08D75 /* PullToRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshTableViewController.h; sourceTree = "<group>"; };
+		22748FA1111C7D5600C08D75 /* PullToRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshTableViewController.m; sourceTree = "<group>"; };
 		228D6B2D111871590054B55F /* RetrieveXMLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrieveXMLController.h; sourceTree = "<group>"; };
 		228D6B2E111871590054B55F /* RetrieveXMLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrieveXMLController.m; sourceTree = "<group>"; };
 		228D6B2F111871590054B55F /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
@@ -46,7 +57,17 @@
 		2291F080111AEE2E004B84C4 /* SecondLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelController.h; sourceTree = "<group>"; };
 		2291F081111AEE2E004B84C4 /* SecondLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelController.m; sourceTree = "<group>"; };
 		2291F082111AEE2E004B84C4 /* SecondLevelController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SecondLevelController.xib; path = Classes/SecondLevelController.xib; sourceTree = "<group>"; };
-		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22F47CA5111C801000F8FA0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		22F47D2C111C823400F8FA0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		22F47D30111C825400F8FA0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		22F47D36111C83C600F8FA0C /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		22F47D37111C83C600F8FA0C /* psst1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = psst1.wav; sourceTree = "<group>"; };
+		22F47D38111C83C600F8FA0C /* psst2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = psst2.wav; sourceTree = "<group>"; };
+		22F47D3C111C842500F8FA0C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		22F47D47111C843300F8FA0C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		22F47D5C111C848F00F8FA0C /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffect.h; sourceTree = "<group>"; };
+		22F47D5D111C848F00F8FA0C /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffect.m; sourceTree = "<group>"; };
+		22F4817D111C882700791084 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		28A0AAE50D9B0CCF005BE974 /* WordrXMLTable_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordrXMLTable_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -61,9 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				22F47CA6111C801000F8FA0C /* Foundation.framework in Frameworks */,
+				22F47D2D111C823400F8FA0C /* UIKit.framework in Frameworks */,
+				22F47D31111C825400F8FA0C /* CoreGraphics.framework in Frameworks */,
+				22F47D3D111C842500F8FA0C /* CoreAudio.framework in Frameworks */,
+				22F47D48111C843300F8FA0C /* AudioToolbox.framework in Frameworks */,
+				22F4817E111C882700791084 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +107,12 @@
 				1D3623250D0F684500981E51 /* WordrXMLTableAppDelegate.m */,
 				2291F080111AEE2E004B84C4 /* SecondLevelController.h */,
 				2291F081111AEE2E004B84C4 /* SecondLevelController.m */,
+				22748F9B111C7CFA00C08D75 /* EGORefreshTableHeaderView.h */,
+				22748F9C111C7CFA00C08D75 /* EGORefreshTableHeaderView.m */,
+				22748FA0111C7D5600C08D75 /* PullToRefreshTableViewController.h */,
+				22748FA1111C7D5600C08D75 /* PullToRefreshTableViewController.m */,
+				22F47D5C111C848F00F8FA0C /* SoundEffect.h */,
+				22F47D5D111C848F00F8FA0C /* SoundEffect.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -119,6 +149,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources-iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				22F47D36111C83C600F8FA0C /* pop.wav */,
+				22F47D37111C83C600F8FA0C /* psst1.wav */,
+				22F47D38111C83C600F8FA0C /* psst2.wav */,
 				228D6BF1111882790054B55F /* README */,
 				228D6BF2111882790054B55F /* TODO.txt */,
 				228D6BEB111880600054B55F /* wordr.png */,
@@ -136,9 +169,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				22F47CA5111C801000F8FA0C /* Foundation.framework */,
+				22F47D2C111C823400F8FA0C /* UIKit.framework */,
+				22F47D30111C825400F8FA0C /* CoreGraphics.framework */,
+				22F47D3C111C842500F8FA0C /* CoreAudio.framework */,
+				22F47D47111C843300F8FA0C /* AudioToolbox.framework */,
+				22F4817D111C882700791084 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,6 +237,9 @@
 				228D6BF3111882790054B55F /* README in Resources */,
 				228D6BF4111882790054B55F /* TODO.txt in Resources */,
 				2291F084111AEE2E004B84C4 /* SecondLevelController.xib in Resources */,
+				22F47D39111C83C600F8FA0C /* pop.wav in Resources */,
+				22F47D3A111C83C600F8FA0C /* psst1.wav in Resources */,
+				22F47D3B111C83C600F8FA0C /* psst2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +256,9 @@
 				228D6B31111871590054B55F /* RetrieveXMLController.m in Sources */,
 				228D6B32111871590054B55F /* Tweet.m in Sources */,
 				2291F083111AEE2E004B84C4 /* SecondLevelController.m in Sources */,
+				22748FA2111C7D5600C08D75 /* PullToRefreshTableViewController.m in Sources */,
+				22F47D5E111C848F00F8FA0C /* SoundEffect.m in Sources */,
+				22F4814E111C86A100791084 /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,11 +270,19 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WordrXMLTable_Prefix.pch;
 				INFOPLIST_FILE = "WordrXMLTable-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework\"",
+				);
 				PRODUCT_NAME = WordrXMLTable;
 			};
 			name = Debug;
@@ -242,9 +292,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WordrXMLTable_Prefix.pch;
 				INFOPLIST_FILE = "WordrXMLTable-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework\"",
+				);
 				PRODUCT_NAME = WordrXMLTable;
 				VALIDATE_PRODUCT = YES;
 			};

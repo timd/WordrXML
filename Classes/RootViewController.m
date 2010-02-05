@@ -11,6 +11,7 @@
 #import "Tweet.h"
 #import "SecondLevelController.h"
 
+#define kXMLurl @"http://wordr.org/everyone.xml"
 
 @implementation RootViewController
 
@@ -46,10 +47,15 @@
 	xmlController = [[RetrieveXMLController alloc] init];
 	
 	// Now go and grab the data from the url...	
-	grabbedData = [xmlController retrieveTweetsFromURL:@"http://gollum.local/everyone2.xml"];
+
+	grabbedData = [xmlController retrieveTweetsFromURL:kXMLurl];
+	
+//	grabbedData = [xmlController retrieveTweetsFromURL:@"http://everyone2.xml"];
 	
 	// As a final check, spit out some diagnostics...
 	NSLog(@"\n\nThere are %d objects in the array...", [grabbedData count]);
+	
+	[xmlController release];
 	
 	
 }

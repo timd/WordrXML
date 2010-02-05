@@ -79,6 +79,7 @@
 	
 	textLabel.text = self.text;
 	userLabel.text = self.user;
+	tweetIDLabel.text = self.tweetID;
 	//	UILabel *tweetIDLabel;
 	//	UILabel *positionLabel;
 	//	UILabel *usagesLabel;
