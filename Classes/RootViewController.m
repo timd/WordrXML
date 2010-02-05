@@ -20,7 +20,40 @@
 @synthesize secondLevelController;
 
 
-- (void)viewDidLoad {
+
+
+- (void)reloadDataFromWordr {
+	
+	// Fire off the retrieve tweets method
+	// First create an NSMutableArray to dump the grabbed data into
+	
+	NSMutableArray *dataFromWordr;
+	
+	dataFromWordr = [[NSMutableArray alloc] init];
+	
+	// Then create an instance of RetrieveXMLController
+	RetrieveXMLController *xmlController;
+	xmlController = [[RetrieveXMLController alloc] init];
+	
+	// Now go and grab the data from the url...	
+	
+	dataFromWordr = [xmlController retrieveTweetsFromURL:kXMLurl];
+	
+	//	grabbedData = [xmlController retrieveTweetsFromURL:@"http://everyone2.xml"];
+	
+	// As a final check, spit out some diagnostics...
+	NSLog(@"\n\nThere are %d objects in the array...", [dataFromWordr count]);
+	
+	[xmlController release];
+	
+	grabbedData = dataFromWordr;
+
+	[RootViewController reloadData];
+	
+}
+
+
+- (NSMutableArray *)viewDidLoad {
 
 	NSLog(@"About to run the ViewDidLoad superclass method...");
     [super viewDidLoad];
@@ -36,7 +69,10 @@
 	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 	// self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 	
+	
+
 	// Fire off the retrieve tweets method
 	// First create an NSMutableArray to dump the grabbed data into
 	
@@ -56,7 +92,6 @@
 	NSLog(@"\n\nThere are %d objects in the array...", [grabbedData count]);
 	
 	[xmlController release];
-	
 	
 }
 

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PullToRefreshTableViewController.h"
 
 @class SecondLevelController;
 
-@interface RootViewController : UITableViewController {
+@interface RootViewController : PullToRefreshTableViewController {
 	
 	NSMutableArray *grabbedData;
 	UITableViewCell *nibLoadedCell;
@@ -21,5 +22,7 @@
 @property (nonatomic, retain) NSMutableArray *grabbedData;
 @property (nonatomic, retain) IBOutlet UITableViewCell *nibLoadedCell;
 @property (nonatomic, retain) IBOutlet SecondLevelController *secondLevelController;
+
+-(void)reloadDataFromWordr;
 
 @end
